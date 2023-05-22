@@ -1,8 +1,11 @@
-﻿name: "CI Windows On-Push"
+name: "CI Windows On-Push"
 
 on:
   workflow_dispatch: #  Allows manual builds
   push:
+    branches:
+      - master
+  pull_request:
     branches:
       - master
 
